@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 2020_04_24_190126) do
     t.string "auth"
     t.string "https"
     t.string "cors"
-    t.string "url"
     t.integer "category_id"
+    t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
