@@ -1,7 +1,25 @@
-<h1>Apis view</h1>
+<div class="vertical-center">
+    <div class="container p-5">
 
-<ul>
-<% @apis.each do |api| %>
-    <li><%= api.name %></li>
-<% end %>
-</ul>
+        <h1 class="text-center main-title">The app idea generator!</h1>
+
+        <p class="text-center mt-4">You should consider mashing</p>
+        <div class="row justify-content-center mt-5">
+            <div class="col-4">
+                <div class="bg-success px-3 py-3">
+                    <h2><a class="text-white text-center" href="<%= @apis[0].url %>"><%= @apis[0].name %></a></h2>
+                    <p class="description"><%= @apis[0].description %></p>
+                </div>
+            </div>
+            <div class="col-2">
+                <h3 class="text-center pt-3">with</h3>
+            </div>
+            <div class="col-4">
+                <div class="bg-success px-3 py-3">
+                    <h2><a class="text-white text-center" href="<%= @apis[1].url %>"><%= @apis[1].name %></a></h2>
+                    <p class="description"><%= @apis[1].description %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

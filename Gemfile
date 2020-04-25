@@ -56,3 +56,4 @@ end
 gem 'httparty'
 gem 'nokogiri'
 gem 'pry'
+gem 'bootstrap'
