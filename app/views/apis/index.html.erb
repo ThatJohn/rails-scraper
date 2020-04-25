@@ -5,22 +5,25 @@
 
         <p class="text-center mt-4">You should consider mashing</p>
         <div class="row justify-content-center mt-5">
-            <div class="bg-success col-4">
-                <div class="px-3 py-3">
+            <div class="col-4 bg-success d-flex">
+                <div class="justify-content-center align-self-center px-3 py-3">
                     <h2><a class="text-white text-center block" href="<%= @apis[0].url %>"><%= @apis[0].name %></a></h2>
                     <p class="description"><%= @apis[0].description %></p>
                 </div>
             </div>
-            <div class="col-2">
-                <h3 class="text-center pt-3">with</h3>
+            <div class="col-2 d-flex">
+            <div class="justify-content-center align-self-center text-center">
+                <h3 class="ml-4">with</h3>
             </div>
-            <div class="col-4 bg-success">
-                <div class="bg-success px-3 py-3">
+            </div>
+            <div class="col-4 bg-success d-flex">
+                <div class="justify-content-center align-self-center px-3 py-3">
                     <h2><a class="text-white text-center block" href="<%= @apis[1].url %>"><%= @apis[1].name %></a></h2>
                     <p class="description"><%= @apis[1].description %></p>
                 </div>
             </div>
         </div>
+        <p class="text-center mt-4"><button class="btn btn-primary" onClick="window.location.reload();">Reroll</button></p>
         <p class="footnote text-center mt-4">Made with 💗 by <a href="https://johnfajardo.dev">John Fajardo</a></p>
     </div>
 </div>

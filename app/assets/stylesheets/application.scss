@@ -53,12 +53,13 @@ $body-bg:  $new-bg;
     h3 {
         font-family: 'Amatic SC', cursive;
         font-size:3em;
+        display: block;
+        width: 100%;
     }
 
     p {
         font-family: 'Josefin Slab', serif;
         font-size: 2em;
-
     }
     
     .description {
@@ -66,7 +67,7 @@ $body-bg:  $new-bg;
         font-size: 1.5em;
     }
 
-    a.block {
+    .block {
         display: block;
         margin: 0 auto;
     }
