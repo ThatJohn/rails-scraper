@@ -1,25 +1,26 @@
 <div class="vertical-center">
     <div class="container p-5">
 
-        <h1 class="text-center main-title">The app idea generator!</h1>
+        <h1 class="text-center main-title">The app idea generator</h1>
 
         <p class="text-center mt-4">You should consider mashing</p>
         <div class="row justify-content-center mt-5">
-            <div class="col-4">
-                <div class="bg-success px-3 py-3">
-                    <h2><a class="text-white text-center" href="<%= @apis[0].url %>"><%= @apis[0].name %></a></h2>
+            <div class="bg-success col-4">
+                <div class="px-3 py-3">
+                    <h2><a class="text-white text-center block" href="<%= @apis[0].url %>"><%= @apis[0].name %></a></h2>
                     <p class="description"><%= @apis[0].description %></p>
                 </div>
             </div>
             <div class="col-2">
                 <h3 class="text-center pt-3">with</h3>
             </div>
-            <div class="col-4">
+            <div class="col-4 bg-success">
                 <div class="bg-success px-3 py-3">
-                    <h2><a class="text-white text-center" href="<%= @apis[1].url %>"><%= @apis[1].name %></a></h2>
+                    <h2><a class="text-white text-center block" href="<%= @apis[1].url %>"><%= @apis[1].name %></a></h2>
                     <p class="description"><%= @apis[1].description %></p>
                 </div>
             </div>
         </div>
+        <p class="footnote text-center mt-4">Made with 💗 by <a href="https://johnfajardo.dev">John Fajardo</a></p>
     </div>
 </div>

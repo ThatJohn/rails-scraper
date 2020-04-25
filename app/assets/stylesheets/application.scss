@@ -31,6 +31,15 @@ $body-bg:  $new-bg;
     margin-top: auto;
     margin-bottom: auto;
 
+    .row{
+        overflow: hidden; 
+    }
+    
+    [class*="col-"]{
+        margin-bottom: -99999px;
+        padding-bottom: 99999px;
+    }
+
     .main-title {
         font-family: 'Amatic SC', cursive;
         font-size:5em;
@@ -57,9 +66,13 @@ $body-bg:  $new-bg;
         font-size: 1.5em;
     }
 
-    a {
+    a.block {
         display: block;
         margin: 0 auto;
+    }
+
+    .footnote {
+        font-size: 2em;
     }
 }
 
