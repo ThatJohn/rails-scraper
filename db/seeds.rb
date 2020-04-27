@@ -1,4 +1,7 @@
+# This is the page we're scraping
 url = "https://github.com/public-apis/public-apis"
+
+# And this is where we're storing the page
 parsed_page = Nokogiri::HTML(HTTParty.get(url))
 
 # Get categories from the ul at the top
@@ -38,6 +41,7 @@ categories.each_with_index do |cat, index|
         values << index+1
         values << link
         rows << row.keys.zip(values).to_h
+        
     end
 end
 
